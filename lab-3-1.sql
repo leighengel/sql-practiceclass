@@ -14,4 +14,15 @@
 -- | 2020 | 30       |
 -- +------+----------+
 
+-- from ChatGPT
+-- orginal 
+-- Select name, year 
+
+SELECT year, COUNT(name) AS team_count
+FROM teams
+GROUP BY year
+ORDER BY year ASC;
+
+
+
 

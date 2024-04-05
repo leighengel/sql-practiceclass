@@ -15,4 +15,14 @@
 -- | 2019 | Houston Astros                | 107       |
 -- | 2004 | St. Louis Cardinals           | 105       |
 
+-- SELECT name, AVG(wins) AS average_wins
+-- FROM teams
+-- WHERE year >= 1960
+-- GROUP BY name
+-- ORDER BY name ASC;
 
+SELECT year, MAX(wins) AS most_wins
+FROM teams
+WHERE year >= 1960
+GROUP BY year
+ORDER BY year ASC;

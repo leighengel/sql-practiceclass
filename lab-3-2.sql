@@ -40,3 +40,16 @@
 -- +-------------------------------+------------------+
 
 
+-- First solo attempt 
+-- SELECT year, COUNT(name) AS team_count
+-- FROM teams
+-- WHERE year >= 2000
+-- GROUP BY year
+-- ORDER BY year ASC;
+
+SELECT name, AVG(wins) AS average_wins
+FROM teams
+WHERE year >= 2000
+GROUP BY name
+ORDER BY name ASC;
+
